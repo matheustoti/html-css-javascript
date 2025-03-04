@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.c1{
+            background-color: aquamarine;
+        }
+
+        .c2c3{
+            background-color: rgb(130, 35, 84);
+        }
+
+        /*
+        col group 
+
+        cria uma estilo de "variavel " para cada coluna
+
+        */
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="c1">
+            <col class="c2c3"span="2">
+            <col class="c4">
+        </colgroup>
+        <caption>colunas multiseleção</caption>
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+        <tr>
+            <td>ana</td>
+            <td>F</td>
+            <td>24</td>
+            <td>jornalista</td>
+        </tr>
+        <tr>
+            <td>josias</td>
+            <td>M</td>
+            <td>54</td>
+            <td>masculino</td>
+        </tr>
+        <tr>
+            <td>jonildo</td>
+            <td>M</td>
+            <td>56</td>
+            <td>fazendeiro</td>
+        </tr>
+        <tr>
+            <td>rita</td>
+            <td>F</td>
+            <td>89</td>
+            <td>diarista</td>
+        </tr>
+    </table>
+</body>
+</html>
