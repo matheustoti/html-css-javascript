@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.pai{
+            background-color: rgb(234, 152, 53);
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item{
+            background-color: rgb(28, 216, 216);
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item" style="order:1">D</div>
+        <div class="item">E</div>
+        <div class="item" style="order:3">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

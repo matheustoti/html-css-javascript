@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body , html {
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+section#login{
+    position: absolute;
+    background-color: white;
+    width: 280px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.496);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+
+section > div#imagem{
+    background: #5f2c82 url(pexels-markusspiske-1089438\ \(1\).jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    display: block;
+}
+
+section > div#formulario{
+    padding: 10px;
+    
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+div.campo > span {
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    padding: 5px;
+    width: 40px;
+    border-radius: 15px;
+}
+
+div.campo > input{
+    background-color: #49a09d;
+    font-size: 1em;
+    height:45px;
+    transform: translateY(-10px);
+    border-radius: 8px;
+}
+
+#form{
+    margin-left: 10px;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 95%;
+    height: 30px;
+    background-color: #49a09d;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#font{
+    font-size: 0.8em;
+}
+
+form > input[type=submit]:hover{
+    background-color: #2f6463;
+    
+}
+
+form > a.botao{
+    color: black;
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+    width: 95%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+form > a.botao > span{
+    font-size: 0.8em;
+    
+}
+
+form > a.botao:hover{
+    background-color: #49a09d;
+}
+
+div.campo > label{
+    display: none;
+}
+

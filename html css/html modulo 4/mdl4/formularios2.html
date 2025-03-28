@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outros tipos de input</title>
+</head>
+<body>
+    <h1>outros metodos</h1>
+    <form action="teste.js" method="post">
+        <div>
+            <label for="iuser">Usuario: </label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" size="10" placeholder="nome de usuario" autocomplete="username">          
+        </div>
+        <div>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" size="10" placeholder="minimo 8 caracteres" autocomplete="current-password">
+        </div>  
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+
+</body>
+</html>

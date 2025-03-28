@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* demais midias */
+
+/*
+
+tipical device breakpoints
+
+pequenas telas: ate 600px
+celular: 600px ate 768px
+tablet: 768px ate 992px 
+desktop : 992px ate 1200px
+grandes telas : acima de 1200px
+
+*/
+
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(imagens/back-print.jpg); /*desnecessario*/
+
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+        padding: 10px;
+
+    }
+
+    main::after{
+       content: "impressao feita atraves www.cursoemvideo.com";
+       font-size: 12px
+
+    }
+
+    img#mobile{display: none;}
+
+    img#pc{display: none;}
+
+    img#tablet{display: none;}
+
+    img#televisao{display: none;}
+
+    img#print{display: block;}
+
+}
+
+/* nao precisa de config movel pois ja criamos o mobo first
+
+@media screen and (max-width:600px){
+
+
+}
+
+@media screen and (min-width:600px) and (max-width:768px){
+
+
+}
+
+*/
+
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: url(imagens/back-tablet.jpg);
+    }
+
+    img#mobile{display: none;}
+
+    img#pc{display: none;}
+
+    img#tablet{display: block;}
+
+    img#televisao{display: none;}
+
+    img#print{display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(imagens/back-pc.jpg);
+    }
+
+    img#mobile{display: none;}
+
+    img#pc{display: block;}
+
+    img#tablet{display: none;}
+
+    img#televisao{display: none;}
+
+    img#print{display: none;}
+
+
+}
+
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(imagens/back-tv.jpg);
+
+
+    }
+
+    img#mobile{display: none;}
+
+    img#pc{display: none;}
+
+    img#tablet{display: none;}
+
+    img#televisao{display: block;}
+
+    img#print{display: none;}
+
+}
+
+

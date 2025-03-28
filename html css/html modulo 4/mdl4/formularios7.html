@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>select datalist e textarea</h1>
+
+    <form action="" method="post">
+        <div>
+            <label for="iestados">Estado:</label>
+            <select name="estados" id="iestados">
+                <optgroup label="regiao sudeste">
+                    <option value="SP">sao paulo</option>
+                    <option value="MG">rio de janeiro</option>
+                    <option value="ES">espirito santo</option>
+                </optgroup>
+                <optgroup label="nordeste">
+                    <option value="MA">maranhao</option>
+                    <option value="BA">bahia</option>
+                    <option value="PE">pernambuco</option>
+                </optgroup>
+            </select>
+        </div>
+        
+        <div>
+            <label for="iprof">profissão: </label>
+            <input type="text" name="prof" id="iprof" list="listaprof">
+            <datalist id="listaprof">
+                <option>encanador</option>
+                <option>pedreiro</option>
+                <option>garçom</option>
+                <option>frentista</option>
+                <option>auxiliar administrativo</option>
+            </datalist>
+        </div>
+        
+        
+        <div>
+            <label for="">mensagem</label><br>
+            <textarea name="" id="" cols="30" rows="10">
+            </textarea>
+        </div>
+        
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+    </form>
+
+
+
+
+</body>
+</html>

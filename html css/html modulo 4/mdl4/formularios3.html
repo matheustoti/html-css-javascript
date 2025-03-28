@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>mais exemplos de caixas</h1>
+    <form action="js.js" autocomplete="on">
+        <div>
+            <label for="inome">nome completo: </label>
+            <input type="text" name="nome" id="inome" required placeholder="nome completo" autocomplete="name">
+        </div>
+        <div>
+            <label for="imedia">media: </label>
+            <input type="number" name="media" id="imedia" step="0.1" placeholder="0 a 10" min="0" max="10" required value="5">
+        </div>
+        <div>
+            <label for="iano">mes: </label>
+            <input type="month" name="ano" id="iano">
+        </div>
+        <div>
+            <label for="idia">dia: </label>
+            <input type="date" id="idia">
+        </div>
+        <div>
+            <label for="ihora">hora da prova</label>
+            <input type="time" name="hora" id="ihora">
+        </div>
+        <input type="submit" value="enviar">
+        <input type="submit" value="limpar">
+    </form>
+</body>
+</html>

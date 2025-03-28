@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.pai{
+            background-color: rgb(234, 152, 53);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: rgb(28, 216, 216);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+            
+        }
+
+        div#caixaA{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        div#caixaB{
+            flex-shrink: 2;
+            flex-grow: 2;
+        }
+
+        div#caixaC{
+            flex-shrink: 2;
+            flex-grow: 1;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="item" id="caixaA">A</div>
+        <div class="item" id="caixaB">B</div>
+        <div class="item" id="caixaC">C</div>
+    </div>
+</body>
+</html>

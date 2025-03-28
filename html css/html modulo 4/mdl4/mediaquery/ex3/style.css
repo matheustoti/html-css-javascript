@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* podemos reunir todas as config em unico css
+usando @media 
+
+@media all{
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html , body {
+        height: 100vh;
+        width: 100vw;
+        background-color: #233eff;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+
+    h1 {
+        color: white;
+        text-shadow: 3px 3px 0px #11219b;
+        padding: 10px;
+    }
+            }
+    
+
+    //
+
+    @media screen and (orientation: portrait){
+        body{
+            background-image: url(cev-portrait.jpg);
+        }
+    }   
+    
+    //
+
+
+    @media screen and (orientation: landscape){
+        body{
+        background-image: url(cev-landscape.jpg);
+     }
+    }
+    

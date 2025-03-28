@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.pai{
+            background-color: rgb(234, 152, 53);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: rgb(28, 216, 216);
+            border: 1px solid black;
+            text-align: center;
+    
+        }
+
+        div#caixaA{
+            flex: 1 1 200px;
+        }
+
+        div#caixaB{
+            flex: 1 5 200px;
+
+        }
+
+        div#caixaC{
+            flex: 3 1 200px;
+
+        }
+
+
+
+        /* shorthand flex
+        grow - shrink - basis
+          
+        outras simplificações
+
+        flex 0 1 auto (padrao) / flex:initial
+
+        flex 0 0 auto / flex-none - elementos nao flexiveis
+
+        flex 1 1 auto / flex auto - totalmente flexivel
+
+        flex : 3 (so o grow) / shrink 1 por padrao e basis auto
+
+        
+        */
+
+        
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="item" id="caixaA">A</div>
+        <div class="item" id="caixaB">B</div>
+        <div class="item" id="caixaC">C</div>
+    </div>
+</body>
+</html>
