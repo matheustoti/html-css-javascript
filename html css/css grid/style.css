@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#pai{
+    height: 100vh;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns:repeat(3,300px);
+    grid-template-rows: 100px 100px 100px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+    
+    /* gap (row , collum)*/
+
+}
+
+.item{
+    background-color: aqua;
+    border: 1px solid black;
+}
